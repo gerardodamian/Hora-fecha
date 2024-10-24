@@ -1,5 +1,5 @@
 body{
-    background-image: url("https://img.freepik.com/vector-premium/fondo-tecnologia-futurista-temporizador-numerico-digital-concepto-cuenta-regresiva-vista-perspectiva_4974-215.jpg?ga=GA1.1.2066391481.1692658210&semt=ais_hybrid");
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/439/553/103/minimalist-minimal-art-fox-night-wallpaper-preview.jpg");
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: #ffffff;
@@ -14,10 +14,10 @@ body{
 #Fecha{
     width: 90%; /* Cambia a 90% del viewport para hacerlo más flexible */
     max-width: 800px; /* Define un ancho máximo */
-    font-size: 4vw; /* Tamaño flexible para pantallas más pequeñas */
+    font-size: 3vw; /* Tamaño flexible para pantallas más pequeñas */
     background-color: #f399119d;
-    margin: 50px auto;
-    padding: 5vw; /* Padding flexible */
+    margin: 40px auto;
+    padding: 3vw; /* Padding flexible */
     border-radius: 5px;
     box-shadow: 3px 5px rgb(236, 220, 177);
 }
@@ -29,8 +29,8 @@ body{
     font-family: 'Orbitron', sans-serif;
     font-size: 4vw; /* Tamaño de fuente flexible */
     background: #05abec70;
-    width: 70vw; /* Ajusta el tamaño en función de la anchura de la pantalla */
-    height: 70vw; /* Mantén el ancho y alto iguales para que sea un círculo */
+    width: 65vw; /* Ajusta el tamaño en función de la anchura de la pantalla */
+    height: 65vw; /* Mantén el ancho y alto iguales para que sea un círculo */
     max-width: 300px; /* Limita el tamaño máximo para pantallas grandes */
     max-height: 300px;
     margin: 10px auto;
