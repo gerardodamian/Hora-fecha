@@ -1,59 +1,84 @@
-
-@font-face {
-    font-family: 'Digital7';
-    src: url('path-to-your-font/digital-7.ttf') format('truetype');
-}
-
 body{
     background-image: url("https://img.freepik.com/vector-premium/fondo-tecnologia-futurista-temporizador-numerico-digital-concepto-cuenta-regresiva-vista-perspectiva_4974-215.jpg?ga=GA1.1.2066391481.1692658210&semt=ais_hybrid");
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: #ffffff;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Hace que el fondo sea fijo */
+    margin: 0;
+    padding: 0;
 }
 
+/* Ajuste de la caja que muestra la fecha */
 #Fecha{
-    width: 800px;
-    font-size: 50px;
+    width: 90%; /* Cambia a 90% del viewport para hacerlo más flexible */
+    max-width: 800px; /* Define un ancho máximo */
+    font-size: 4vw; /* Tamaño flexible para pantallas más pequeñas */
     background-color: #f399119d;
     margin: 50px auto;
-    padding: 50px;
+    padding: 5vw; /* Padding flexible */
     border-radius: 5px;
     box-shadow: 3px 5px rgb(236, 220, 177);
 }
 
+/* Estilo del reloj circular */
 #info{
     margin: 4px;
-    padding: 50px;
+    padding: 5vw; /* Tamaño flexible para el relleno */
     font-family: 'Orbitron', sans-serif;
-    font-size: 60px;
+    font-size: 4vw; /* Tamaño de fuente flexible */
     background: #05abec70;
-    width: 300px;
-    height: 300px;
+    width: 70vw; /* Ajusta el tamaño en función de la anchura de la pantalla */
+    height: 70vw; /* Mantén el ancho y alto iguales para que sea un círculo */
+    max-width: 300px; /* Limita el tamaño máximo para pantallas grandes */
+    max-height: 300px;
     margin: 10px auto;
     box-shadow: 10px 5px 5px rgb(145, 218, 236);
-    border-radius: 50%;
+    border-radius: 50%; /* Sigue siendo un círculo */
     border: 5px solid black;
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     text-align: center;
 }
+
+/* Estilo del botón */
 #toggleFormato{
     margin: 4px;
     padding: 30px;
     font-family: Tahoma, Verdana, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 2vw; /* Tamaño de fuente flexible */
     background: #10c3c985;
-    width: 250px;
+    width: 70vw; /* Ajusta el tamaño del botón */
+    max-width: 250px; /* Tamaño máximo para pantallas grandes */
     margin: 10px auto;
     text-align: center;
     color: white; /* Cambia el color del texto */
     border: none;
     border-radius: 5px;
-    
     box-shadow: 3px 5px rgb(196, 237, 247);
     cursor: pointer;
 }
+
+/* Cambio de color al pasar el cursor por el botón */
 #toggleFormato:hover {
-            background-color: #264dbb; /* Cambia el color al pasar el cursor */
-        }
+    background-color: #264dbb;
+}
+
+/* Media query para dispositivos más pequeños */
+@media (max-width: 768px) {
+    #Fecha {
+        font-size: 7vw; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        padding: 20px;
+    }
+    
+    #info {
+        font-size: 12vw; /* Ajusta el tamaño del texto en pantallas más pequeñas */
+    }
+
+    #toggleFormato {
+        font-size: 5vw; /* Ajusta el tamaño del botón para pantallas pequeñas */
+        padding: 10px;
+    }
+}
